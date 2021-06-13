@@ -1,0 +1,38 @@
+* {
+  margin: 5px;
+  padding: 5px;
+  align-items: center;
+}
+.container {
+  align-items: center;
+  display: grid;
+  justify-content: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat((3, 1fr));
+  border: 2px solid;
+  grid-gap: 1px;
+}
+.card1 {
+  border: 1px;
+  background-color: blue;
+  color: #ffffff;
+}
+
+.card2 {
+  border: 1px;
+  background-color: green;
+  color: #ffffff;
+}
+
+.card3 {
+  border: 1px;
+  background-color: red;
+  color: #ffffff;
+}
+
+#data {
+  width: 300px;
+}

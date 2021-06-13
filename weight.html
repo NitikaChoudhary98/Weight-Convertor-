@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weight Converter App</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="heading">
+                <h1>Weight Converter App</h1>
+            </div>
+            <div class="value">
+                <input id="data" type="number" placeholder="Enter Value in Pounds" >
+            </div>
+            <div class="cards" id="cards-list">
+                <div class=card1>
+                    <h4>Grams:</h4>
+                    <p id=val1></p>
+                </div>
+                <div class=card2>
+                    <h4 >Kilograms:</h4>
+                    <p id=val2></p>
+                </div>
+                <div class=card3>
+                    <h4>Ounches:</h4>
+                    <p id=val3></p>
+                </div>
+            </div>
+        </div>
+        <script>
+            
+            document.getElementById("cards-list").style.visibility="hidden";
+            document.getElementById("data").addEventListener("input", function(e){
+            
+                document.getElementById("cards-list").style.visibility="visible";
+           
+            let inputvalue = e.target.value;
+           
+            document.getElementById("val1").innerHTML =inputvalue / 0.0022046;
+            document.getElementById("val2").innerHTML =inputvalue / 2.2046;
+            document.getElementById("val3").innerHTML =inputvalue * 16;
+
+
+
+            })
+
+        </script>
+    </body>
+</html>
